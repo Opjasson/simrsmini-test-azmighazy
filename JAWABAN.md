@@ -7,7 +7,17 @@ Salin blok di bawah untuk setiap bug yang Anda temukan.
 
 ## Bug 1
 
-- Gejala:
-- Lokasi (file:baris):
-- Penyebab:
-- Perbaikan:
+- Gejala: tidak bisa masuk aplikasi awal setup
+- Lokasi (file:baris): vendor\laravel\framework\src\Illuminate\Encryption\EncryptionServiceProvider.php**:83**
+No application encryption key has been specified
+- Penyebab: missing app key, first setup
+- Perbaikan: php artisan key:generate -> untuk generate key setiap kali setup device developer baru
+
+
+## Bug 2
+
+- Gejala: tidak bisa masuk aplikasi awal setup
+- Lokasi (file:baris): vendor\laravel\framework\src\Illuminate\Encryption\EncryptionServiceProvider.php**:83**
+No application encryption key has been specified
+- Penyebab: missing app key, first setup
+- Perbaikan: php artisan key:generate -> untuk generate key setiap kali setup device developer baru
