@@ -20,3 +20,10 @@ No application encryption key has been specified
 - Lokasi (file:baris): request/dokterrequest/ (baris 17,'no_telepon' => ['required','regex:/(01)[0-9]{9}/'],)
 - Penyebab: belum ditambahkan validasi nomor telepon
 - Perbaikan: 'no_telepon' => ['required','regex:/(01)[0-9]{9}/'],
+
+## Bug 3
+
+- Gejala: update dokter tidak bisa/error
+- Lokasi (file:baris): views\dokter\form.blade.php (baris 19, method 'POST')
+- Penyebab: belum ditambahkan validasi post and update method http
+- Perbaikan: 'cukup merubah methode 'POST' / sesuaikan dengan route nya,
