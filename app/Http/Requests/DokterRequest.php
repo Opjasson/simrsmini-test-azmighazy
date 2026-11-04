@@ -14,7 +14,7 @@ class DokterRequest extends FormRequest
             'nama' => ['required', 'string', 'max:100'],
             'spesialisasi' => ['required', Rule::in(array_keys(Dokter::SPESIALISASI))],
             'no_str' => ['required', 'string', 'max:30', Rule::unique('dokter', 'no_str')->ignore($this->route('dokter'))],
-            'no_telepon' => ['required', 'digits_between:10,15'],
+            'no_telepon' => ['required','regex:/(08)[0-15]/'],
         ];
     }
 }

@@ -65,7 +65,7 @@
                     <label for="no_telepon" class="form-label fw-semibold">No. Telepon</label>
                     <input type="text" id="no_telepon" name="no_telepon" value="{{ old('no_telepon', $dokter->no_telepon) }}" @class(['form-control', 'is-invalid' => $errors->has('no_telepon')]) inputmode="numeric" placeholder="08xxxxxxxxxx">
                     @error('no_telepon')
-                        <div class="invalid-feedback">{{ $message }}</div>
+                        <div class="invalid-feedback">{{ $message }} /08...</div>
                     @enderror
                 </div>
             </div>
